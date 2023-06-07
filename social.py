@@ -51,7 +51,7 @@ def generate_blog(
     rss_link,
     limit,
     readme,
-    time_format="%a, %d %b %Y %H:%M:%S %z",
+    time_format="%d %Y %M",
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate blog"""
@@ -91,7 +91,7 @@ def generate_douban(
     username,
     limit,
     readme,
-    time_format="%a, %d %b %Y %H:%M:%S %Z",
+    time_format="%d %Y %M",
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate douban"""
@@ -199,7 +199,7 @@ def get_star(description: str) -> int:
 
 def format_time(
     timestamp,
-    time_format="%a, %d %b %Y %H:%M:%S %z",
+    time_format="%d %Y %M",
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> datetime:
     try:
