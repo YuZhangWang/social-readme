@@ -129,7 +129,7 @@ def generate_github(
     username: str,
     limit: int,
     readme: str,
-    time_format='"%Y-%m-%dT%H:%M:%SZ"',
+    time_format='"%Y-%m-%d"',
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate github"""
