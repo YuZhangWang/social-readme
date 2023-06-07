@@ -51,7 +51,7 @@ def generate_blog(
     rss_link,
     limit,
     readme,
-    time_format="%Y-%m-%d",
+    time_format="%a, %d %b %Y %H:%M:%S %Z",
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate blog"""
