@@ -91,7 +91,7 @@ def generate_douban(
     username,
     limit,
     readme,
-    time_format="%a, %d %b %Y %H:%M:%S %Z",
+    time_format="%a, %d %b %Y",
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate douban"""
@@ -129,7 +129,7 @@ def generate_github(
     username: str,
     limit: int,
     readme: str,
-    time_format='"%Y-%m-%dT%H:%M:%SZ"',
+    time_format='"%Y-%m-%d"',
     time_zone=pytz.timezone("Asia/Shanghai"),
 ) -> str:
     """Generate github"""
